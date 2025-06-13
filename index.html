@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>隠岐島の民宿「民宿 浜」</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f0f8ff, #ffffff);
+      color: #333;
+    }
+
+    header,
+    footer {
+      background: linear-gradient(to right, #00688B, #3399cc);
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+    }
+
+    .hero {
+      background: url('images/景色１.JPG') center/cover no-repeat;
+      height: 700px;
+      animation: zoomIn 10s ease-in-out infinite alternate;
+      border-bottom: 8px solid #3399cc;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(1);
+      }
+
+      to {
+        transform: scale(1.05);
+      }
+    }
+
+    nav {
+      background-color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+      padding: 0.8em 1em;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #00688B;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 0.5em 1em;
+      border-radius: 20px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #e0f5ff;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 1.5em;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 1.4em;
+      border-left: 6px solid #3399cc;
+      padding-left: 0.75em;
+      margin-top: 2em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1em;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 0.8em;
+      text-align: left;
+    }
+
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      margin-top: 1.5em;
+      border-radius: 8px;
+    }
+
+    ul {
+      margin-top: 1em;
+      padding-left: 1.2em;
+    }
+
+    li {
+      margin-bottom: 0.5em;
+    }
+
+    footer {
+      font-size: 0.9em;
+      margin-top: 2em;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin: 1em;
+        padding: 1em;
+      }
+
+      .hero {
+        height: 200px;
+      }
+
+      iframe {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>隠岐島・民宿　浜</h1>
+    <p>朝日に包まれる小さな宿</p>
+    <p><strong>ご予約・お問い合わせ：090-xxxx-xxxx</strong></p>
+  </header>
+
+  <nav>
+    <a href="#about">宿について</a>
+    <a href="#price">料金</a>
+    <a href="#options">オプション</a>
+    <a href="#breakfast">朝食・クルージング</a>
+    <a href="#reserve">ご予約</a>
+    <a href="#access">アクセス</a>
+  </nav>
+
+  <div class="hero"></div>
+  <main>
+    <h2 id="about">宿について</h2>
+    <p>
+      隠岐島の自然に囲まれた港町に位置する「民宿 浜」は、朝日が見える2階の部屋や、海を望む絶景が魅力の小さな民宿です。
+      本土からの送迎付きで、初めての方でも安心してご利用いただけます。
+    </p>
+    <img src="images/隠岐_港から民宿.jpg" alt="民宿 浜の外観" style="width: 100%; border-radius: 8px; margin-top: 1em;" />
+    <h2 id="price">料金</h2>
+    <table>
+      <tr>
+        <th>部屋タイプ</th>
+        <th>料金（税込）</th>
+      </tr>
+      <tr>
+        <td>1部屋（2名まで）</td>
+        <td>1,100円</td>
+      </tr>
+      <tr>
+        <td>1人部屋</td>
+        <td>＋1,000円</td>
+      </tr>
+      <tr>
+        <td>朝食・夕食付き</td>
+        <td>※準備中</td>
+      </tr>
+    </table>
+
+    <h2 id="options">オプション</h2>
+    <ul>
+      <li>クルージング体験（詳細・料金はお問い合わせください）</li>
+    </ul>
+
+    <h2 id="breakfast">朝食・クルージング・アクセス</h2>
+    <p>
+      朝食は地元の食材を活かした和食を予定しています（価格は現在検討中）。<br>
+      クルージングは季節によりコースが異なり、港から直接出発可能です。<br>
+      アクセスは本土からフェリー＋送迎にてご案内いたします。
+    </p>
+
+    <h2 id="reserve">ご予約</h2>
+    <p>以下の予約フォームからお申し込みください。</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_example/viewform?embedded=true">読み込んでいます…</iframe>
+
+    <h2 id="access">アクセスマップ</h2>
+    <p>以下の地図で、港の宿の所在地をご確認いただけます。</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3223.367399670524!2d133.12667607644457!3d36.10890597245227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzbCsDA2JzMyLjEiTiAxMzPCsDA3JzQ1LjMiRQ!5e0!3m2!1sja!2sjp!4v1749794097326!5m2!1sja!2sjp"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 港の宿 - 島根県隠岐島</p>
+  </footer>
+</body>
+
+</html>
